@@ -15,7 +15,12 @@ public class Person {
     private final StringProperty city;
     private final ObjectProperty<LocalDate> birthday;
 
-
+    /**
+     * Default constructor.
+     */
+    public Person() {
+        this(null, null);
+    }
 
     public Person(String firstName, String lastName) {
         this.firstName = new SimpleStringProperty(firstName);
